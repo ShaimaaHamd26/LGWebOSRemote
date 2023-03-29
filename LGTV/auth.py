@@ -37,6 +37,9 @@ class LGTVAuth(WebSocketClient):
         self.send(json.dumps(hello_data))
 
     def __prompt(self, response):
+        print("response")
+        print(response)
+
         # {"type":"response","id":"register_0","payload":{"pairingType":"PROMPT","returnValue":true}}
         if response['payload']['pairingType'] == "PROMPT":
             print ("Please accept the pairing request on your LG TV")
