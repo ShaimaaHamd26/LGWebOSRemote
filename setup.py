@@ -3,7 +3,7 @@ from setuptools import setup
 
 LGTV_VERSION = '0.3'
 LGTV_DOWNLOAD_URL = (
-    'https://github.com/klattimer/LGWebOSRemote/tarball/' + LGTV_VERSION
+    'https://github.com/ShaimaaHamd26/LGWebOSRemote/tarball/' + LGTV_VERSION
 )
 
 setup(
@@ -15,7 +15,7 @@ setup(
     license='MIT',
     author='Karl Lattimer',
     author_email='karl@qdh.org.uk',
-    url='https://github.com/klattimer/LGWebOSRemote',
+    url='https://github.com/ShaimaaHamd26/LGWebOSRemote',
     download_url=LGTV_DOWNLOAD_URL,
     entry_points={
         'console_scripts': [
