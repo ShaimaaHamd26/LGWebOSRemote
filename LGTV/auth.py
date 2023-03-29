@@ -47,6 +47,13 @@ class LGTVAuth(WebSocketClient):
         if 'client-key' in response['payload'].keys():
             self.__clientKey = response['payload']['client-key']
             self.__waiting_callback = None
+            print(json.dumps({
+                "client-key": {
+                    "reason": response.decode('utf-8')
+                }
+            }))
+            print("hereeeeee")
+            print(response)
             self.close()
             return
 
